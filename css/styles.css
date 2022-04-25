@@ -1,0 +1,150 @@
+:root {
+    --main-color:#FFFFFF;
+    --second-color:#D4C17F;
+    --background-color:#242B33;
+    --footer-background-color:#2D343C;
+    --text-form-color:#E7E7E7;
+}
+
+body  {
+    font-family: 'Raleway', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--background-color);
+    color: var(--main-color);
+}
+
+footer {
+    background-color: var(--footer-background-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-family: 'Playfair Display', 'sans-serif';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    color: var(--second-color);
+}
+.list {
+    list-style: none;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.69;
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--second-color);
+}
+
+/* header */
+.span-logo {
+    font-family: 'Playfair Display', 'sans-serif';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+}
+
+.logo {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.12em;
+    color: var(--main-color);
+}
+
+.link {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+    color: var(--second-color);
+}
+/* hero */
+
+.hero-title {
+    font-family: 'Playfair Display', 'sans-serif';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.33;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.hero-address {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+/* advantage */
+
+.advantage-title {
+    display: none;
+}
+
+.advantage-text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.35;
+    text-align: center;
+}
+
+/* gallery */
+
+.gallery-text {
+    font-size: 24px;
+    line-height: 1.17;
+}
+
+/* Recording for viewing */
+
+.recording-text{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.recording-desc {
+    font-size: 13px;
+    line-height: 1.23;
+    text-align: center;
+    color: var(--text-form-color);
+}
+
+/* question */
+
+.question-desc {
+    font-size: 13px;
+    line-height: 1.23;
+    text-align: center;
+    color: var(--text-form-color);
+}
+
+ /* footer */
+
+.footer-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+}
+
+.footer-mail {
+    font-weight: 700;
+    color: var(--second-color);
+}

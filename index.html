@@ -6,76 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HouseVOP ЖИЛОЙ КОМПЛЕКС</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&family=Roboto:wght@300&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body bgcolor="2D343C">
+<body>
     <header>
-        <nav>
-            <a href="./index.html" aria-label="Логотип"><span>HouseVOP</span>ЖИЛОЙ КОМПЛЕКС</a>
+        <nav class="site-nav">
+            <a href="./index.html" aria-label="Логотип" class="logo"><span class="span-logo">HouseVOP</span><br>ЖИЛОЙ КОМПЛЕКС</a>
             <ul>
-                <li><a href="#">О комплексе</a></li>
-                <li><a href="#">Район</a></li>
-                <li><a href="#">Каталог квартир</a></li>
-                <li><a href="#">Ипотека</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#advantage" class="link">О комплексе</a></li>
+                <li><a href="#map" class="link">Район</a></li>
+                <li><a href="#gallery" class="link">Каталог квартир</a></li>
+                <li><a href="#" class="link">Ипотека</a></li>
+                <li><a href="#address" class="link">Контакты</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Жилой комплекс <br />в историческом центре</h1>
+<!-- Герой -->
+        <section class="hero">
+            <h1 class="hero-title">Жилой комплекс <br />в историческом центре</h1>
             <img src="./images/mouse.png" alt="мышка">
             <ul>
                 <li><a href="https://www.google.com.ua/maps/place/%D0%94%D0%BD%D0%B5%D0%BF%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F,+10,+%D0%9A%D0%B8%D0%B5%D0%B2,+02081/@50.4076665,30.6034275,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c5a2a7ae1bb5:0x5507868f89e21871!8m2!3d50.4076665!4d30.6056162?hl=ru"
-                        target="_blank"><img src="./images/placeholder.png" alt="иконка значка на карте">Днепровская наб.
+                        target="_blank" class="hero-address"><img src="./images/placeholder.png" alt="иконка значка на карте">Днепровская наб.
                         10-15</a></li>
-                <li><a href="tel:+380441234567"><img src="./images/phone-call.png" alt="иконка телефонной трубки">+38
+                <li><a href="tel:+380441234567" class="hero-address"><img src="./images/phone-call.png" alt="иконка телефонной трубки">+38
                         (044)123-45-67</a></li>
             </ul>
         </section>
-
-        <section>
-            <h2>Приемущества ЖК HouseVOP</h2>
+<!-- Приемущества -->
+        <section class="advantage" id="advantage">
+            <h2 class="advantage-title title">Приемущества ЖК HouseVOP</h2>
             <ul>
                 <li><img src="./images/bench.png" alt="парк">
-                    <p>Рядом исторические парки и скверы</p>
+                    <p class="advantage-text">Рядом исторические парки и скверы</p>
                 </li>
                 <li><img src="./images/building.png" alt="здание">
-                    <p>Полностью
-                        обустроенный</p>
+                    <p class="advantage-text">Полностью обустроенный</p>
                 </li>
                 <li><img src="./images/fountain.png" alt="фонтан">
-                    <p>10 фонтанов
-                        на территории</p>
+                    <p class="advantage-text">10 фонтанов на территории</p>
                 </li>
                 <li><img src="./images/bicycle.png" alt="велосипед">
-                    <p>6 км
-                        велодорожек</p>
+                    <p class="advantage-text">6 км велодорожек</p>
                 </li>
             </ul>
         </section>
-
-        <section>
-            <h2>Наши квартиры</h2>
+<!-- Галерея -->
+        <section class="gallery" id="gallery">
+            <h2 class="title">Наши квартиры</h2>
             <ul>
-                <li><img src="./images/Rectangle.jpg" alt="Фотография лофта на третьем этаже" width="535">
-                    <p>Лофт — 3 этажа</p>
+                <li><img src="./images/Rectangle.jpg" alt="Фотография лофта на третьем этаже" width="535" height="320">
+                    <p class="gallery-text">Лофт — 3 этажа</p>
                 </li>
-                <li><img src="./images/Rectangle1.png" alt="Фотография лофта на втором этаже" width="535">
-                    <p>Лофт — 2 этажа</p>
+                <li><img src="./images/Rectangle1.png" alt="Фотография лофта на втором этаже" width="535" height="320">
+                    <p class="gallery-text">Лофт — 2 этажа</p>
                 </li>
-                <li><img src="./images/Rectangle.jpg" alt="Фотография лофта на третьем этаже" width="535">
-                    <p>Лофт — 3 этажа</p>
+                <li><img src="./images/Rectangle.jpg" alt="Фотография лофта на третьем этаже" width="535" height="320">
+                    <p class="gallery-text">Лофт — 3 этажа</p>
                 </li>
-                <li><img src="./images/Rectangle1.png" alt="Фотография лофта на втором этаже" width="535">
-                    <p>Лофт — 2 этажа</p>
+                <li><img src="./images/Rectangle1.png" alt="Фотография лофта на втором этаже" width="535" height="320">
+                    <p class="gallery-text">Лофт — 2 этажа</p>
                 </li>
             </ul>
         </section>
-
-        <section>
-            <h2>Хотите посмотреть?</h2>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+<!-- Запись на просмотр -->
+        <section class="recording">
+            <h2 class="title">Хотите посмотреть?</h2>
+            <p class="recording-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                 стандартной
                 "рыбой" для
                 текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
@@ -84,64 +91,56 @@
                 шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
             <input type="text">
             <input type="number">
-            <p>*Мы никому не передаем ваши данные.
+            <p class="recording-desc">*Мы никому не передаем ваши данные.
                 И не сохраняем ваш номер в базу.</p>
-            <button>Посмотреть район</button>
-            <img src="./images/Rectangle4.jpg" alt="видео" width="719">
+            <button class="recording-button button">Посмотреть район</button>
+            <img src="./images/Rectangle4.jpg" alt="видео" width="719" height="650">
         </section>
-
-        <section>
-            <h2>Район на карте</h2>
+<!-- Карта ЖК -->
+        <section id="map">
+            <h2 class="title">Район на карте</h2>
             <img src="./images/Rectangle3.jpg" alt="карта">
-        </section>
-
+        </section>        
+<!-- Задать вопрос -->
         <section>
             <h2>Есть вопросы?</h2>
-            <p>*Мы никому не передаем ваши данные.
+            <p class="question-desc">*Мы никому не передаем ваши данные.
                 И не сохраняем ваш номер в базу.</p>
             <input type="text">
             <input type="number">
-            <button>Посмотреть район</button>
+            <button class="button">Посмотреть район</button>
         </section>
     </main>
 
     <footer>
         <nav>
-            <a href="/"><span>HouseVOP</span>ЖИЛОЙ КОМПЛЕКС</a>
+            <a href="./index.html" aria-label="Логотип" class="logo"><span class="span-logo">HouseVOP</span><br>ЖИЛОЙ КОМПЛЕКС</a>
             <ul>
-                <li><a href="#">О комплексе</a></li>
-                <li><a href="#">Район</a></li>
-                <li><a href="#">Каталог квартир</a></li>
-                <li><a href="#">Ипотека</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#" class="link">О комплексе</a></li>
+                <li><a href="#" class="link">Район</a></li>
+                <li><a href="#" class="link">Каталог квартир</a></li>
+                <li><a href="#" class="link">Ипотека</a></li>
+                <li><a href="#" class="link">Контакты</a></li>
             </ul>
 
             <ul>
-                <li><a href="#">О комплексе</a></li>
-                <li><a href="#">Район</a></li>
-                <li><a href="#">Каталог квартир</a></li>
-                <li><a href="#">Ипотека</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#" class="link">О комплексе</a></li>
+                <li><a href="#" class="link">Район</a></li>
+                <li><a href="#" class="link">Каталог квартир</a></li>
+                <li><a href="#" class="link">Ипотека</a></li>
+                <li><a href="#" class="link">Контакты</a></li>
             </ul>
         </nav>
 
-        <address>
+        <address class="footer-address" id="address">
             Днепровская наб. 10-15 <br>
             Телефон: <a href="tel:+38044234567">+38 (044)123-45-67</a> <br>
             Отдел продаж: 10:00 - 20:00 <br>
-            E-mail: <span>vip@housevip.ru</span>
+            E-mail: <a href="mailto:vip@housevip.com" class="footer-mail">vip@housevip.com</a>
         </address>
-        <!-- <ul>
-    <li><a href="https://www.youtube.com/"> <img src="./img/Youtube-logo.png" alt="ютуб"></a></li>
-    <li><a href="https://www.vk.com/"> <img src="./img/vk-logo.png" alt="контакт"></a></li>
-    <li><a href="https://www.facebook.com/"> <img src="./img/facebook-logo.png" alt="фейсбук"></a></li>
-    <li><a href="https://www.instagram.com"> <img src="./img/instagram-logo.png" alt="инстаграм"></a></li>
-
-</ul> -->
-
         <ul>
-            <li><a href="https://www.youtube.com/" aria-label="Ссылка на youtube">Youtube</a></li>
-            <li><a href="https://www.vk.com/" aria-label="Ссылка на VK">VK</a></li>
+            <li><a href="https://www.youtube.com/" aria-label="Ссылка на Youtube">Youtube</a></li>
+            <li><a href="https://www.vk.com/" aria-label="Ссылка на Twitter">Twitter</a></li>
             <li><a href="https://www.facebook.com/" aria-label="Ссылка на Facebook">Facebook</a></li>
             <li><a href="https://www.instagram.com" aria-label="Ссылка на Instagram">Instagram</a></li>
         </ul>
