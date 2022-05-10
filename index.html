@@ -6,144 +6,254 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HouseVOP ЖИЛОЙ КОМПЛЕКС</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&family=Roboto:wght@300&display=swap"
-            rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&family=Roboto:wght@300&display=swap"
+                rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+                integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="site-nav">
-            <a href="./index.html" aria-label="Логотип" class="logo"><span class="span-logo">HouseVOP</span><br>ЖИЛОЙ КОМПЛЕКС</a>
-            <ul>
-                <li><a href="#advantage" class="link">О комплексе</a></li>
-                <li><a href="#map" class="link">Район</a></li>
-                <li><a href="#gallery" class="link">Каталог квартир</a></li>
-                <li><a href="#" class="link">Ипотека</a></li>
-                <li><a href="#address" class="link">Контакты</a></li>
+<!-- header -->
+    <header class="site-header">
+        <nav class="site-nav container">
+            <a class="logo" href="./index.html" aria-label="Логотип"><span class="span-logo">HouseVOP</span><br>ЖИЛОЙ КОМПЛЕКС</a>
+            <ul class="site-item list">
+                <li class="site-list"><a class="site-link link" href="#advantage">О комплексе</a></li>
+                <li class="site-list"><a class="site-link link" href="#map">Район</a></li>
+                <li class="site-list"><a class="site-link link" href="#gallery">Каталог квартир</a></li>
+                <li class="site-list"><a class="site-link link" href="#">Ипотека</a></li>
+                <li class="site-list"><a class="site-link link" href="#address">Контакты</a></li>
             </ul>
         </nav>
     </header>
     <main>
-<!-- Герой -->
-        <section class="hero">
-            <h1 class="hero-title">Жилой комплекс <br />в историческом центре</h1>
-            <img src="./images/mouse.png" alt="мышка">
-            <ul>
-                <li><a href="https://www.google.com.ua/maps/place/%D0%94%D0%BD%D0%B5%D0%BF%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F,+10,+%D0%9A%D0%B8%D0%B5%D0%B2,+02081/@50.4076665,30.6034275,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c5a2a7ae1bb5:0x5507868f89e21871!8m2!3d50.4076665!4d30.6056162?hl=ru"
-                        target="_blank" class="hero-address"><img src="./images/placeholder.png" alt="иконка значка на карте">Днепровская наб.
-                        10-15</a></li>
-                <li><a href="tel:+380441234567" class="hero-address"><img src="./images/phone-call.png" alt="иконка телефонной трубки">+38
-                        (044)123-45-67</a></li>
-            </ul>
+<!-- hero -->
+        <section class="hero-section">
+            <div class="container hero">
+                <h1 class="hero-title">Жилой комплекс <br />в историческом центре</h1>
+                <div>
+                    <svg class="hero-mouse">
+                        <use href="./images/symbol-defs.svg#icon-mouse"></use>
+                    </svg>
+                </div>
+                <ul class="list hero-item">
+                    <li class="hero-link">
+                        <a class="hero-address"
+                            href="https://www.google.com.ua/maps/place/%D0%94%D0%BD%D0%B5%D0%BF%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F,+10,+%D0%9A%D0%B8%D0%B5%D0%B2,+02081/@50.4076665,30.6034275,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c5a2a7ae1bb5:0x5507868f89e21871!8m2!3d50.4076665!4d30.6056162?hl=ru"
+                            target="_blank">
+                            <div>
+                                <svg class="icon-map">
+                                    <use href="./images/symbol-defs.svg#icon-placeholder"></use>
+                                </svg>
+                            </div>Днепровская наб. 10-15</a></li>
+                    <li class="hero-link">
+                        
+                    <a class="hero-address" href="tel:+380441234567"><div>
+                        <svg class="icon-tel">
+                            <use href="./images/symbol-defs.svg#icon-phone-call"></use>
+                        </svg>
+                    </div>+38(044)123-45-67</a></li>
+                </ul>
+            </div>
         </section>
-<!-- Приемущества -->
-        <section class="advantage" id="advantage">
-            <h2 class="advantage-title title">Приемущества ЖК HouseVOP</h2>
-            <ul>
-                <li><img src="./images/bench.png" alt="парк">
-                    <p class="advantage-text">Рядом исторические парки и скверы</p>
-                </li>
-                <li><img src="./images/building.png" alt="здание">
-                    <p class="advantage-text">Полностью обустроенный</p>
-                </li>
-                <li><img src="./images/fountain.png" alt="фонтан">
-                    <p class="advantage-text">10 фонтанов на территории</p>
-                </li>
-                <li><img src="./images/bicycle.png" alt="велосипед">
-                    <p class="advantage-text">6 км велодорожек</p>
-                </li>
-            </ul>
+<!-- advantage -->
+        <section id="advantage">
+            <div class="container advantage">
+                <h2 class="advantage-title title">Приемущества ЖК HouseVOP</h2>
+                <ul class="list advantage-item">
+                    <li class="advantage-list">
+                        <div>
+                            <svg class="icon-bench">
+                                <use href="./images/symbol-defs.svg#icon-bench"></use>
+                            </svg>
+                        </div>
+                        <p class="advantage-text">Рядом исторические парки и скверы</p>
+                    </li>
+                    <li class="advantage-list">
+                        <div>
+                            <svg class="icon-building">
+                                <use href="./images/symbol-defs.svg#icon-building"></use>
+                            </svg>
+                        </div>
+                        <p class="advantage-text">Полностью обустроенный</p>
+                    </li>
+                    <li class="advantage-list">
+                        <div>
+                            <svg class="icon-fountain">
+                                <use href="./images/symbol-defs.svg#icon-fountain"></use>
+                            </svg>
+                        </div>
+                        <p class="advantage-text">10 фонтанов на территории</p>
+                    </li>
+                    <li class="advantage-list">
+                        <div>
+                            <svg class="icon-bicycle">
+                                <use href="./images/symbol-defs.svg#icon-bicycle"></use>
+                            </svg>
+                        </div>
+                        <p class="advantage-text">6 км велодорожек</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-<!-- Галерея -->
+<!-- gallery -->
         <section class="gallery" id="gallery">
-            <h2 class="title">Наши квартиры</h2>
-            <ul>
-                <li><img src="./images/Rectangle.jpg" alt="Фотография лофта на третьем этаже" width="535" height="320">
-                    <p class="gallery-text">Лофт — 3 этажа</p>
-                </li>
-                <li><img src="./images/Rectangle1.png" alt="Фотография лофта на втором этаже" width="535" height="320">
-                    <p class="gallery-text">Лофт — 2 этажа</p>
-                </li>
-                <li><img src="./images/Rectangle.jpg" alt="Фотография лофта на третьем этаже" width="535" height="320">
-                    <p class="gallery-text">Лофт — 3 этажа</p>
-                </li>
-                <li><img src="./images/Rectangle1.png" alt="Фотография лофта на втором этаже" width="535" height="320">
-                    <p class="gallery-text">Лофт — 2 этажа</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="gallery-title">Наши квартиры</h2>
+                <ul class="gallery-item list">
+                    <li class="gallery-list"><img class="gallery-img" src="./images/kitchen.jpg" alt="Фотография лофта на третьем этаже" width="535"
+                            height="320">
+                        <p class="gallery-text">Лофт — 3 этажа</p>
+                    </li>
+                    <li class="gallery-list"><img class="gallery-img" src="./images/room.jpg" alt="Фотография лофта на втором этаже" width="535"
+                            height="320">
+                        <p class="gallery-text">Лофт — 2 этажа</p>
+                    </li>
+                    <li class="gallery-list"><img class="gallery-img" src="./images/kitchen.jpg" alt="Фотография лофта на третьем этаже" width="535"
+                            height="320">
+                        <p class="gallery-text">Лофт — 3 этажа</p>
+                    </li>
+                    <li class="gallery-list"><img class="gallery-img" src="./images/room.jpg" alt="Фотография лофта на втором этаже" width="535"
+                            height="320">
+                        <p class="gallery-text">Лофт — 2 этажа</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-<!-- Запись на просмотр -->
-        <section class="recording">
-            <h2 class="title">Хотите посмотреть?</h2>
-            <p class="recording-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                стандартной
-                "рыбой" для
-                текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
-                размеров и
-                форм
-                шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
-            <input type="text">
-            <input type="number">
-            <p class="recording-desc">*Мы никому не передаем ваши данные.
-                И не сохраняем ваш номер в базу.</p>
-            <button class="recording-button button">Посмотреть район</button>
-            <img src="./images/Rectangle4.jpg" alt="видео" width="719" height="650">
+<!-- Recording for viewing -->
+        <section class="recording-overlay">
+           <div class="container recording">
+                <div class="recording-list">
+                    <h2 class="recording-title">Хотите посмотреть?</h2>
+                    <div class="recording-box">
+                        <div class="recording-info">
+                            <span class="recording-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                                является
+                                стандартной
+                                "рыбой" для
+                                текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                размеров и
+                                форм
+                                шрифтов, используя Lorem Ipsum для распечатки образцов.</span>
+                        </div>
+                        <ul class="recording-form list">
+                            <li class="recording-item"><input class="input-text input" type="text"></li>
+                            <li class="recording-item"><input class="input-number input" type="number"></li>
+                            <li class="recording-item"><span class="recording-desc">*Мы никому не передаем ваши данные.
+                                И не сохраняем ваш номер в базу.</span></li>
+                            <li class="recording-item"><button class="recording-button button" type="submit">Посмотреть район</button></li>
+                        </ul>
+                        <!-- <div class="recording-form">
+                            <input class="input-text input" type="text">
+                            <input class="input-number input" type="number">
+                            <span class="recording-desc">*Мы никому не передаем ваши данные.
+                                И не сохраняем ваш номер в базу.</span>
+                            <button class="recording-button button" type="submit">Посмотреть район</button>
+                        </div> -->
+                    </div>
+                </div>
+           </div>
         </section>
+        <div class="container"><img class="recording-img" src="./images/Rectangle-2.jpg" alt="видео" width="719" height="650"></div>
 <!-- Карта ЖК -->
         <section id="map">
-            <h2 class="title">Район на карте</h2>
-            <img src="./images/Rectangle3.jpg" alt="карта">
+            <div class="container">
+                <h2 class="map-title">Район на карте</h2>
+                <img src="./images/Rectangle3.jpg" alt="карта" width="1100">
+            </div>
         </section>        
 <!-- Задать вопрос -->
-        <section>
-            <h2>Есть вопросы?</h2>
-            <p class="question-desc">*Мы никому не передаем ваши данные.
-                И не сохраняем ваш номер в базу.</p>
-            <input type="text">
-            <input type="number">
-            <button class="button">Посмотреть район</button>
+        <section class="question-section">
+            <div class="container question">
+                <h2>Есть вопросы?</h2>
+                <ul class="question-list list">
+                    <li><span class="question-desc">*Мы никому не передаем ваши данные.
+                        И не сохраняем ваш номер в базу.</span></li>
+                    <li><input class="input" type="text"></li>
+                    <li><input class="input" type="number"></li>
+                    <li><button class="button" type="submit">Посмотреть район</button></li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer>
-        <nav>
-            <a href="./index.html" aria-label="Логотип" class="logo"><span class="span-logo">HouseVOP</span><br>ЖИЛОЙ КОМПЛЕКС</a>
-            <ul>
-                <li><a href="#" class="link">О комплексе</a></li>
-                <li><a href="#" class="link">Район</a></li>
-                <li><a href="#" class="link">Каталог квартир</a></li>
-                <li><a href="#" class="link">Ипотека</a></li>
-                <li><a href="#" class="link">Контакты</a></li>
-            </ul>
-
-            <ul>
-                <li><a href="#" class="link">О комплексе</a></li>
-                <li><a href="#" class="link">Район</a></li>
-                <li><a href="#" class="link">Каталог квартир</a></li>
-                <li><a href="#" class="link">Ипотека</a></li>
-                <li><a href="#" class="link">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <address class="footer-address" id="address">
-            Днепровская наб. 10-15 <br>
-            Телефон: <a href="tel:+38044234567">+38 (044)123-45-67</a> <br>
-            Отдел продаж: 10:00 - 20:00 <br>
-            E-mail: <a href="mailto:vip@housevip.com" class="footer-mail">vip@housevip.com</a>
-        </address>
-        <ul>
-            <li><a href="https://www.youtube.com/" aria-label="Ссылка на Youtube">Youtube</a></li>
-            <li><a href="https://www.vk.com/" aria-label="Ссылка на Twitter">Twitter</a></li>
-            <li><a href="https://www.facebook.com/" aria-label="Ссылка на Facebook">Facebook</a></li>
-            <li><a href="https://www.instagram.com" aria-label="Ссылка на Instagram">Instagram</a></li>
-        </ul>
+     <div class="container footer">
+            <nav class="footer-nav">
+                <div>
+                    <a class="logo" href="./index.html" aria-label="Логотип"><span class="span-logo">HouseVOP</span><br>ЖИЛОЙ
+                        КОМПЛЕКС</a>
+                </div>
+                <div>
+                    <ul class="list">
+                    <li class="footer-list"><a class="link" href="#">О комплексе</a></li>
+                    <li class="footer-list"><a class="link" href="#">Район</a></li>
+                    <li class="footer-list"><a class="link" href="#">Каталог квартир</a></li>
+                    <li class="footer-list"><a class="link" href="#">Ипотека</a></li>
+                    <li class="footer-list"><a class="link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            
+                <div>
+                    <ul class="list">
+                        <li class="footer-list"><a class="link" href="#">О комплексе</a></li>
+                        <li class="footer-list"><a class="link" href="#">Район</a></li>
+                        <li class="footer-list"><a class="link" href="#">Каталог квартир</a></li>
+                        <li class="footer-list"><a class="link" href="#">Ипотека</a></li>
+                        <li class="footer-list"><a class="link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="footer-address" id="address">
+                <address class="address-text"> Днепровская наб. 10-15 </address> 
+                <ul class="list">
+                    <li class="address-list">Телефон: <a href="tel:+38044234567">+38 (044)123-45-67</a></li>
+                    <li class="address-list">Отдел продаж: <time datetime="10:00 - 20:00">10:00 - 20:00</time></li>
+                    <li class="address-list">E-mail: <a class="footer-mail" href="mailto:vip@housevip.com">vip@housevip.com</a></li>
+                </ul>
+            
+            <ul class="footer-social list">
+                <li class="footer-item">
+                    <a href="https://www.youtube.com/" aria-label="Ссылка на Youtube">
+                        <div>
+                            <svg class="footer-icon">
+                                <use href="./images/symbol-defs.svg#icon-youtube"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.twitter.com/" aria-label="Ссылка на Twitter"><div>
+                    <svg class="footer-icon">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                </div>
+            </a>
+            </li>
+                <li class="footer-item"><a href="https://www.facebook.com/" aria-label="Ссылка на Facebook">
+                    <div>
+                    <svg class="footer-icon">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                </div>
+            </a>
+            </li>
+                <li class="footer-item">
+                    <a href="https://www.instagram.com" aria-label="Ссылка на Instagram">
+                        <div>
+                            <svg class="footer-icon">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </div>
+                     </a>
+                </li>
+            </ul></div>
+     </div>
     </footer>
 </body>
 
