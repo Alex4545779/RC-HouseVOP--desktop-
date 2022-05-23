@@ -18,18 +18,19 @@
 
 <body>
 <!-- header -->
-    <header class="site-header">
-        <nav class="site-nav container">
-            <a class="logo" href="./index.html" aria-label="Логотип"><span class="span-logo">HouseVOP</span><br>ЖИЛОЙ КОМПЛЕКС</a>
-            <ul class="site-item list">
-                <li class="site-list"><a class="site-link link" href="#advantage">О комплексе</a></li>
-                <li class="site-list"><a class="site-link link" href="#map">Район</a></li>
-                <li class="site-list"><a class="site-link link" href="#gallery">Каталог квартир</a></li>
-                <li class="site-list"><a class="site-link link" href="#">Ипотека</a></li>
-                <li class="site-list"><a class="site-link link" href="#address">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="site-header x">
+    <nav class="site-nav container">
+        <a class="logo" href="./index.html" aria-label="Логотип"><span class="span-logo">HouseVOP</span><br>ЖИЛОЙ
+            КОМПЛЕКС</a>
+        <ul class="site-item list">
+            <li class="site-list"><a class="site-link link" href="#advantage">О комплексе</a></li>
+            <li class="site-list"><a class="site-link link" href="#map">Район</a></li>
+            <li class="site-list"><a class="site-link link" href="#gallery">Каталог квартир</a></li>
+            <li class="site-list"><a class="site-link link" href="#">Ипотека</a></li>
+            <li class="site-list"><a class="site-link link" href="#address">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
 <!-- hero -->
         <section class="hero-section">
@@ -61,7 +62,7 @@
             </div>
         </section>
 <!-- advantage -->
-        <section id="advantage">
+        <section class="advantage-section" id="advantage">
             <div class="container advantage">
                 <h2 class="advantage-title title">Приемущества ЖК HouseVOP</h2>
                 <ul class="list advantage-item">
@@ -99,29 +100,50 @@
                     </li>
                 </ul>
             </div>
+            <div class="advantage-number">
+                <p class="number">II</p>
+            </div>
         </section>
 <!-- gallery -->
-        <section class="gallery" id="gallery">
-            <div class="container">
+        <section class="gallery-section" id="gallery">
+            <div class="container gallery-container">
                 <h2 class="gallery-title">Наши квартиры</h2>
                 <ul class="gallery-item list">
-                    <li class="gallery-list"><img class="gallery-img" src="./images/kitchen.jpg" alt="Фотография лофта на третьем этаже" width="535"
-                            height="320">
-                        <p class="gallery-text">Лофт — 3 этажа</p>
+                    <li class="gallery-list">
+                        <div class="gallery-thumb"><img class="gallery-img" src="./images/kitchen.jpg" alt="Фотография лофта на третьем этаже" width="535" height="320">
+                            <div class="gallery-desc">
+                                <p class="gallery-text">Лофт — 3 этажа</p>
+                            </div>
+                        </div>
                     </li>
-                    <li class="gallery-list"><img class="gallery-img" src="./images/room.jpg" alt="Фотография лофта на втором этаже" width="535"
-                            height="320">
-                        <p class="gallery-text">Лофт — 2 этажа</p>
+                    <li class="gallery-list">
+                        <div class="gallery-thumb">
+                            <img class="gallery-img" src="./images/room.jpg" alt="Фотография лофта на втором этаже" width="535" height="320">
+                                <div class="gallery-desc">
+                                    <p class="gallery-text">Лофт — 2 этажа</p>
+                                </div>
+                        </div>
                     </li>
-                    <li class="gallery-list"><img class="gallery-img" src="./images/kitchen.jpg" alt="Фотография лофта на третьем этаже" width="535"
-                            height="320">
-                        <p class="gallery-text">Лофт — 3 этажа</p>
+                    <li class="gallery-list">
+                        <div class="gallery-thumb">
+                            <img class="gallery-img" src="./images/kitchen.jpg" alt="Фотография лофта на третьем этаже" width="535" height="320">
+                                <div class="gallery-desc">
+                                    <p class="gallery-text">Лофт — 3 этажа</p>
+                                </div>
+                        </div>
                     </li>
-                    <li class="gallery-list"><img class="gallery-img" src="./images/room.jpg" alt="Фотография лофта на втором этаже" width="535"
-                            height="320">
-                        <p class="gallery-text">Лофт — 2 этажа</p>
+                    <li class="gallery-list">
+                        <div class="gallery-thumb">
+                            <img class="gallery-img" src="./images/room.jpg" alt="Фотография лофта на втором этаже" width="535" height="320">
+                                <div class="gallery-desc">
+                                    <p class="gallery-text">Лофт — 2 этажа</p>
+                                </div>
+                        </div>
                     </li>
                 </ul>
+            </div>
+            <div class="gallery-number">
+                <p class="number">III</p>
             </div>
         </section>
 <!-- Recording for viewing -->
@@ -140,47 +162,58 @@
                                 форм
                                 шрифтов, используя Lorem Ipsum для распечатки образцов.</span>
                         </div>
-                        <ul class="recording-form list">
-                            <li class="recording-item"><input class="input-text input" type="text"></li>
-                            <li class="recording-item"><input class="input-number input" type="number"></li>
-                            <li class="recording-item"><span class="recording-desc">*Мы никому не передаем ваши данные.
-                                И не сохраняем ваш номер в базу.</span></li>
-                            <li class="recording-item"><button class="recording-button button" type="submit">Посмотреть район</button></li>
-                        </ul>
-                        <!-- <div class="recording-form">
-                            <input class="input-text input" type="text">
-                            <input class="input-number input" type="number">
-                            <span class="recording-desc">*Мы никому не передаем ваши данные.
-                                И не сохраняем ваш номер в базу.</span>
-                            <button class="recording-button button" type="submit">Посмотреть район</button>
-                        </div> -->
+                        <form class="recording-form" action="">
+                           
+                            <div class="recording-item">
+                                <input class="input-text input" type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="recording-item">
+                                <input class="input-number input" type="number" placeholder="Ваш телефон">
+                            </div>
+                            <div class="recording-item">
+                                <p class="recording-desc">*Мы никому не передаем ваши данные.
+                                        И не сохраняем ваш номер в базу.</p>
+                            </div>
+                            <div class="recording-item">
+                               <button class="recording-button button" type="submit">Посмотреть район</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
            </div>
         </section>
-        <div class="container"><img class="recording-img" src="./images/Rectangle-2.jpg" alt="видео" width="719" height="650"></div>
+        <div class="recording-picture">
+            <div class="container">
+                <img class="recording-img" src="./images/Rectangle-2.jpg" alt="видео" width="719" height="650">
+            </div>
+                <div class="recording-number">
+                    <p class="number">IV</p>
+                </div>
+        </div>
+        
 <!-- Карта ЖК -->
         <section id="map">
-            <div class="container">
+            <div class="container map-container">
                 <h2 class="map-title">Район на карте</h2>
-                <img src="./images/Rectangle3.jpg" alt="карта" width="1100">
+                <img class="map-img" src="./images/Rectangle3.jpg" alt="карта" width="1100">
             </div>
+            <!-- <div class="map-number">
+                <p class="number">V</p>
+            </div> -->
         </section>        
-<!-- Задать вопрос -->
-        <section class="question-section">
-            <div class="container question">
-                <h2>Есть вопросы?</h2>
-                <ul class="question-list list">
-                    <li><span class="question-desc">*Мы никому не передаем ваши данные.
-                        И не сохраняем ваш номер в базу.</span></li>
-                    <li><input class="input" type="text"></li>
-                    <li><input class="input" type="number"></li>
-                    <li><button class="button" type="submit">Посмотреть район</button></li>
-                </ul>
-            </div>
-        </section>
+<section class="question-section">
+    <div class="container question-container">
+        <h2>Есть вопросы?</h2>
+        <form class="question-list" action="">
+                <span class="question-desc">*Мы никому не передаем ваши данные.
+                        И не сохраняем ваш номер в базу.</span>
+                <input class="input-text input" type="text" placeholder="Ваше имя">
+                <input class="input-number input" type="number" placeholder="Ваш телефон">
+                <button class="button" type="submit">Посмотреть район</button>
+        </form>
+    </div>
+</section>
     </main>
-
     <footer>
      <div class="container footer">
             <nav class="footer-nav">
@@ -219,7 +252,7 @@
             
             <ul class="footer-social list">
                 <li class="footer-item">
-                    <a href="https://www.youtube.com/" aria-label="Ссылка на Youtube">
+                    <a class="social-link" href="https://www.youtube.com/" aria-label="Ссылка на Youtube">
                         <div>
                             <svg class="footer-icon">
                                 <use href="./images/symbol-defs.svg#icon-youtube"></use>
@@ -228,14 +261,15 @@
                     </a>
                 </li>
                 <li class="footer-item">
-                    <a href="https://www.twitter.com/" aria-label="Ссылка на Twitter"><div>
+                    <a class="social-link" href="https://www.twitter.com/" aria-label="Ссылка на Twitter">
+                        <div>
                     <svg class="footer-icon">
                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                 </div>
             </a>
             </li>
-                <li class="footer-item"><a href="https://www.facebook.com/" aria-label="Ссылка на Facebook">
+                <li class="footer-item"><a class="social-link" href="https://www.facebook.com/" aria-label="Ссылка на Facebook">
                     <div>
                     <svg class="footer-icon">
                         <use href="./images/symbol-defs.svg#icon-facebook"></use>
@@ -244,7 +278,7 @@
             </a>
             </li>
                 <li class="footer-item">
-                    <a href="https://www.instagram.com" aria-label="Ссылка на Instagram">
+                    <a class="social-link" href="https://www.instagram.com" aria-label="Ссылка на Instagram">
                         <div>
                             <svg class="footer-icon">
                         <use href="./images/symbol-defs.svg#icon-instagram"></use>
