@@ -1,0 +1,70 @@
+.hero {
+    position: absolute;
+    height: 840px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);  
+}
+ .hero__block {
+    @extend %container;
+     padding-top: 210px;
+ }
+
+ .hero__title {
+     font-family: $second-font-family;
+     font-weight: 700;
+     font-size: 48px;
+     line-height: 1.33;
+     text-align: center;
+     color: $second-color;
+ }
+
+ .hero__svg--mouse {
+     display: block;
+     width: 38px;
+     height: 40px;
+     margin-top: 94px;
+     margin-right: auto;
+     margin-bottom: 188px;
+     margin-left: auto;
+ }
+
+.hero__item {
+    @extend %list;
+     display: flex;
+     justify-content: center;
+ }
+
+  .hero__info {
+      display: flex;
+      align-items: center;
+
+    &:not(:last-child) {
+            margin-right: 98px;
+        }
+  }
+
+.hero__link {
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+    fill: $main-color;
+
+    &:hover,
+    &:focus {
+        color: $second-color;
+        fill: $second-color;
+    }
+}
+           
+.hero__icon {
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 14px;
+}

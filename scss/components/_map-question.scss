@@ -1,0 +1,47 @@
+/* map */
+.map {
+    position: relative;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 180px;
+}
+
+.map__container {
+    @extend %container;
+    position: relative;
+    z-index: 2;
+}
+
+.map__title {
+    margin-bottom: 100px;
+}
+
+.map__number {
+    @extend %number;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    z-index: 1;
+}
+
+.question__container {
+    @extend %container;
+    padding-bottom: 180px;
+}
+
+.question__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.question__desc {
+    display: inline-flex;
+    width: 255px;
+}
+
+.question__button {
+    @extend %button;
+}

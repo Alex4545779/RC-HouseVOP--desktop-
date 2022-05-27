@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: 400;
+    background-color: $background-color;
+    color: $main-color;
+}
+
+footer {
+    background-color: $footer-background-color;
+}
+
+a {
+    text-decoration: none;
+    color: $main-color;
+}
+
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: $second-font-family;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    color: $second-color;
+}

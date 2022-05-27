@@ -1,0 +1,14 @@
+
+.logo {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.12em;
+    color: $main-color;
+
+    &__span {
+            font-family: $second-font-family;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.33;
+        }
+}

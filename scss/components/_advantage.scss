@@ -1,0 +1,60 @@
+/* advantage */
+.advantage {
+    position: relative;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advantage__box {
+    @extend %container;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.advantage__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantage__item {
+    @extend %list;
+    display: flex;
+    padding-top: 120px;
+    margin: 0 135px;
+
+}
+
+.advantage__list:not(:last-child) {
+    margin-right: 70px;
+}
+
+.advantage__icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 53px;
+}
+
+.advantage__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.35;
+    text-align: center;
+}
+
+.advantage__number {
+    @extend %number;
+    position: absolute;
+    top: -25px;
+    left: 60%;
+}

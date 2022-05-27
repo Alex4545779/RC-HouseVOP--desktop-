@@ -1,0 +1,30 @@
+.footer__social {
+    @extend %list;
+    display: flex;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer__icon {
+    width: 30px;
+    height: 25px;
+    fill: currentColor;
+}
+
+.social__link {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $main-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $second-color;
+    }
+}

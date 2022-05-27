@@ -1,0 +1,118 @@
+/* Recording for viewing */
+.recording {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(180deg, #242B33 10.42%,
+            rgba(36, 43, 51, 0) 50.52%,
+            #242B33 90.1%),
+        linear-gradient(0deg, rgba(36, 43, 51, 0.9),
+            rgba(36, 43, 51, 0.9)),
+        url(../images/town.jpg), #C4C4C4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.recording__overlay {
+    @extend %container;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.recording__title {
+    margin-bottom: 50px;
+}
+
+.recording__box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.recording__info {
+    width: 535px;
+
+    &:not(:last-child) {
+        margin-right: 35px;
+    }
+}
+
+.recording__text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.recording__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 540px;
+}
+
+.recording__item {
+    margin-bottom: 30px;
+
+    &:nth-child(2n + 1) {
+        margin-right: 20px;
+        }
+    
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+        }
+}
+
+.input__info {
+    @extend %input;
+    font-size: 14px;
+    line-height: 1.93;
+    text-align: center;
+}
+
+// .input__info input::placeholder {
+//     font-size: 14px;
+//     line-height: 1.93;
+//     text-align: center;
+//     color: red;
+// }
+
+
+
+.recording__desc {
+    display: inline-flex;
+    width: 255px;
+}
+
+.recording__desc,
+.question__desc {
+    font-size: 13px;
+    line-height: 1.23;
+    text-align: center;
+    color: $text-form-color;
+}
+.recording-button {
+    @extend %button;
+}
+.recording__picture {
+    position: relative;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 180px;
+}
+
+.recording__img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(0deg, rgba(36, 43, 51, 0.8),
+            rgba(36, 43, 51, 0.8)),
+        #626262;
+}
+
+.recording__number {
+    @extend %number;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}

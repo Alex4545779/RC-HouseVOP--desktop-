@@ -5,6 +5,8 @@
     --footer-background-color:#2D343C;
     --text-form-color:#E7E7E7;
     --text-form-input: #BEBEBE;
+    --main-font-family: 'Raleway', sans-serif;
+    --second-font-family: 'Playfair Display', sans-serif;
 }
 
 /* common styles */
@@ -21,20 +23,20 @@
 
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: $main-font-family;
     font-style: normal;
     font-weight: 400;
-    background-color: var(--background-color);
-    color: var(--main-color);
+    background-color: $background-color;
+    color: $main-color;
 }
 
 footer {
-    background-color: var(--footer-background-color);
+    background-color: $footer-background-color;
 }
 
 a {
     text-decoration: none;
-    color: var(--main-color);
+    color: $main-color;
 }
 
 h1,
@@ -46,11 +48,11 @@ ul {
 }
 
 h2 {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: $second-font-family;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.33;
-    color: var(--second-color);
+    color: $second-color;
 }
 
 .visually-hidden {
@@ -77,9 +79,9 @@ h2 {
     height: 50px;
     padding: 0;
     border: 0;
-    background-color: var(--main-color);
+    background-color: $main-color;
     opacity: 0.2;
-    color: var(--text-form-input);
+    color: $text-form-input;
 }
 
 .button {
@@ -92,14 +94,14 @@ h2 {
     font-size: 16px;
     line-height: 1.69;
     text-align: center;
-    color: var(--main-color);
-    background-color: var(--second-color);
+    color: $main-color;
+    background-color: $second-color;
 }
 .button:hover,
 .button:focus,
 .button:active {
     /* border: 5px; */
-    border-color: var(--main-color);
+    border-color: $main-color;
 }
 .container {
     width: 1130px;
@@ -111,12 +113,12 @@ h2 {
     /* background-color: antiquewhite; */
 }
 .number {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: $second-font-family;
     font-weight: 700;
     font-size: 400px;
     line-height: 1.33;
     text-align: center;
-    color: var(--main-color);
+    color: $main-color;
     opacity: 0.02;
 }
 /* header */
@@ -128,7 +130,7 @@ h2 {
     padding-bottom: 44px;
 }
 .span-logo {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: $second-font-family;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.33;
@@ -138,7 +140,7 @@ h2 {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.12em;
-    color: var(--main-color);
+    color: $main-color;
 }
 
 .site-item {
@@ -160,7 +162,7 @@ h2 {
 .link:hover,
 .link:focus,
 .link:active {
-    color: var(--second-color);
+    color: $second-color;
 }
 
 /* hero */
@@ -194,12 +196,12 @@ height: 840px;
 }
 
 .hero-title {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: $second-font-family;
     font-weight: 700;
     font-size: 48px;
     line-height: 1.33;
     text-align: center;
-    color: var(--second-color);
+    color: $second-color;
 }
 
 .hero-mouse {
@@ -238,12 +240,12 @@ height: 840px;
     display: flex;
     font-size: 18px;
     line-height: 21px;
-    fill: var(--main-color);
+    fill: $main-color;
 }
 .hero-address:hover,
 .hero-address:focus {
-    color: var(--second-color);
-    fill: var(--second-color);
+    color: $second-color;
+    fill: $second-color;
 }
 
 /* advantage */
@@ -459,7 +461,7 @@ margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.93;
     text-align: center;
-    /* color: var(--text-form-color); */
+    /* color: $text-form-color; */
 }
 .input-text input::placeholder {
     font-size: 14px;
@@ -480,7 +482,7 @@ margin-bottom: 30px;
     font-size: 13px;
     line-height: 1.23;
     text-align: center;
-    color: var(--text-form-color);
+    color: $text-form-color;
 }
 
 .recording-picture {
@@ -577,7 +579,7 @@ margin-bottom: 30px;
 }
 .footer-mail {
     font-weight: 700;
-    color: var(--second-color);
+    color: $second-color;
 }
 .footer-social {
     display: flex;
@@ -594,7 +596,7 @@ margin-bottom: 30px;
 .social-link:hover,
 .social-link:focus,
 .social-link:active {
-    color: var(--second-color);
+    color: $second-color;
 }
 
 .social-link {
@@ -605,5 +607,5 @@ margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--main-color);
+    color: $main-color;
 }
