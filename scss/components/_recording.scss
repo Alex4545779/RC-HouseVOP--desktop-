@@ -1,8 +1,8 @@
 /* Recording for viewing */
 .recording {
-    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1920px;
     background: linear-gradient(180deg, #242B33 10.42%,
             rgba(36, 43, 51, 0) 50.52%,
             #242B33 90.1%),
@@ -69,15 +69,6 @@
     text-align: center;
 }
 
-// .input__info input::placeholder {
-//     font-size: 14px;
-//     line-height: 1.93;
-//     text-align: center;
-//     color: red;
-// }
-
-
-
 .recording__desc {
     display: inline-flex;
     width: 255px;
@@ -90,15 +81,17 @@
     text-align: center;
     color: $text-form-color;
 }
+
 .recording-button {
     @extend %button;
 }
+
 .recording__picture {
     position: relative;
-    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 180px;
+    max-width: 1920px;
 }
 
 .recording__img {

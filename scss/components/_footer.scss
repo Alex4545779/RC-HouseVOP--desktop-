@@ -4,12 +4,12 @@
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-    /* justify-content: space-between; */
 }
 
 .footer__nav {
     display: flex;
 }
+
 .footer__logo,
 .footer__box {
 margin-right: 150px;
@@ -18,12 +18,15 @@ margin-right: 150px;
 .footer__item {
     @extend %list;
 }
+
 .footer__list:not(:last-child) {
     margin-bottom: 15px;
 }
+
 .footer__link {
     @extend %link;
 }
+
 .footer__address {
     font-style: normal;
     font-weight: 400;
@@ -31,9 +34,11 @@ margin-right: 150px;
     line-height: 1.14;
     letter-spacing: 0.05em;
 }
+
 .address__item {
     @extend %list;
 }
+
 .address__text {
     font-style: normal;
     margin-bottom: 15px;

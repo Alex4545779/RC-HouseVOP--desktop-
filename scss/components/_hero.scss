@@ -1,12 +1,12 @@
 .hero {
     position: absolute;
-    height: 840px;
-    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
     top: 150px;
     left: 50%;
-    transform: translate(-50%);  
+    transform: translate(-50%);
+    height: 840px;
+    max-width: 1920px;
 }
  .hero__block {
     @extend %container;
@@ -24,12 +24,13 @@
 
  .hero__svg--mouse {
      display: block;
+    margin-top: 94px;
+    margin-right: auto;
+    margin-bottom: 188px;
+    margin-left: auto;
      width: 38px;
      height: 40px;
-     margin-top: 94px;
-     margin-right: auto;
-     margin-bottom: 188px;
-     margin-left: auto;
+     
  }
 
 .hero__item {
@@ -62,9 +63,9 @@
            
 .hero__icon {
     display: inline-block;
+    margin-right: 14px;
     width: 20px;
     height: 21px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 14px;
 }

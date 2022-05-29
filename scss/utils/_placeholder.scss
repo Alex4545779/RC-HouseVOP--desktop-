@@ -11,7 +11,6 @@
     border: 0;
     background-color: $main-color;
     opacity: 0.2;
-    color: $text-form-input;
 }
 
 %button {
@@ -25,6 +24,7 @@
     text-align: center;
     color: $main-color;
     background-color: $second-color;
+    border-width: thin;
 
     &:hover,
     &:focus,
@@ -33,16 +33,12 @@
         }
 }
 
-
-
 %container {
-    width: 1130px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    // outline: 2px solid tomato;
-    /* background-color: antiquewhite; */
+    width: 1130px;
 }
 
 %number {

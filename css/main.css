@@ -32,6 +32,12 @@ h2 {
   color: #D4C17F;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .header__item, .hero__item, .advantage__item, .gallery__item, .footer__item, .address__item, .footer__social {
   margin: 0;
   padding: 0;
@@ -45,7 +51,6 @@ h2 {
   border: 0;
   background-color: #FFF;
   opacity: 0.2;
-  color: #BEBEBE;
 }
 
 .recording-button, .question__button {
@@ -59,6 +64,7 @@ h2 {
   text-align: center;
   color: #FFF;
   background-color: #D4C17F;
+  border-width: thin;
 }
 
 .recording-button:hover, .question__button:hover, .recording-button:focus, .question__button:focus, .recording-button:active, .question__button:active {
@@ -66,12 +72,11 @@ h2 {
 }
 
 .header__nav, .hero__block, .advantage__box, .gallery__container, .recording__overlay, .map__container, .question__container, .footer {
-  width: 1130px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: antiquewhite; */
+  width: 1130px;
 }
 
 .advantage__number, .gallery__number, .recording__number, .map__number {
@@ -147,14 +152,14 @@ h2 {
 
 .hero {
   position: absolute;
-  height: 840px;
-  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   top: 150px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  height: 840px;
+  max-width: 1920px;
 }
 
 .hero__block {
@@ -172,12 +177,12 @@ h2 {
 
 .hero__svg--mouse {
   display: block;
-  width: 38px;
-  height: 40px;
   margin-top: 94px;
   margin-right: auto;
   margin-bottom: 188px;
   margin-left: auto;
+  width: 38px;
+  height: 40px;
 }
 
 .hero__item {
@@ -218,19 +223,19 @@ h2 {
 
 .hero__icon {
   display: inline-block;
+  margin-right: 14px;
   width: 20px;
   height: 21px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 14px;
 }
 
 /* advantage */
 .advantage {
   position: relative;
-  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1920px;
 }
 
 .advantage__box {
@@ -263,11 +268,11 @@ h2 {
 
 .advantage__icon {
   display: block;
-  width: 80px;
-  height: 80px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 53px;
+  width: 80px;
+  height: 80px;
 }
 
 .advantage__text {
@@ -287,9 +292,9 @@ h2 {
 /* gallery */
 .gallery__section {
   position: relative;
-  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1920px;
 }
 
 .gallery__container {
@@ -326,9 +331,9 @@ h2 {
 }
 
 .gallery__thumb::before {
-  content: '';
-  display: inline-block;
   position: absolute;
+  display: inline-block;
+  content: '';
   width: 100%;
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#242B33), color-stop(0.01%, rgba(36, 43, 51, 0)), to(#242B33));
@@ -362,9 +367,9 @@ h2 {
 
 /* Recording for viewing */
 .recording {
-  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1920px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242B33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242B33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url(../images/town.jpg), #C4C4C4;
   background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../images/town.jpg), #C4C4C4;
   background-size: cover;
@@ -450,10 +455,10 @@ h2 {
 
 .recording__picture {
   position: relative;
-  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 180px;
+  max-width: 1920px;
 }
 
 .recording__img {
@@ -473,10 +478,10 @@ h2 {
 /* map */
 .map {
   position: relative;
-  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 180px;
+  max-width: 1920px;
 }
 
 .map__container {
@@ -525,7 +530,6 @@ h2 {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
-  /* justify-content: space-between; */
 }
 
 .footer__nav {
@@ -582,9 +586,6 @@ h2 {
 }
 
 .social__link {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,7 +595,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 40px;
+  height: 40px;
   color: #FFF;
+  border-radius: 50%;
 }
 
 .social__link:hover, .social__link:focus, .social__link:active {
